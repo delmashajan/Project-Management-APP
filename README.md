@@ -43,16 +43,16 @@ This project is a RESTful API built with Laravel to manage users, projects, time
 
 ### Steps
 1. **Clone the Repository**:
-   
+   ```sh
    git clone https://github.com/delmashajan/Project-Management-APP.git
    cd project-management-app
    ```
 2. **Install Dependencies**:
-   
+   ```sh
    composer install
    ```
 3. **Set Up Environment**:
-   
+   ```sh
    cp .env.example .env
    ```
 4. **Update `.env` with your database credentials**:
@@ -60,25 +60,24 @@ This project is a RESTful API built with Laravel to manage users, projects, time
    DB_CONNECTION=mysql
    DB_HOST=127.0.0.1
    DB_PORT=3306
-   DB_DATABASE=project_management
+   DB_DATABASE=project_management_db
    DB_USERNAME=root
    DB_PASSWORD=your_password
    ```
 5. **Generate Application Key**:
-   
+   ```sh
    php artisan key:generate
    ```
 6. **Run Migrations and Seeders**:
-
+   ```sh
    php artisan migrate --seed
-
    ```
 7. **Install Laravel Passport**:
-   
+   ```sh
    php artisan install:api --passport
    ```
 8. **Start the Development Server**:
-   
+   ```sh
    php artisan serve
    ```
 9. **Access the API**:
